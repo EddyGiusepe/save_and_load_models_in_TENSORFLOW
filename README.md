@@ -32,6 +32,49 @@ Agora podemos **salvar** nosso modelo apenas chamando o método ``save()`` e pas
 
 Podemos carregar o modelo que foi salvo usando o ``load_method()`` presente no módulo tensorflow.
 
+**Syntax:** ``tensorflow.keras.models.load_model(location/model_name)``
+
+A localização junto com o nome do modelo é passada como parâmetro neste método.
+
+**Nota:** ``Se especificarmos “.h5”, o modelo será salvo no formato hdf5; se nenhuma extensão for especificada, o modelo será salvo no formato nativo do TensorFlow.``
+
+
+## Usando o método save_weights()
+
+Agora você pode simplesmente salvar os pesos de todas as camadas usando o método ``save_weights()``. Salva os pesos das camadas contidas no modelo. É aconselhável usar o método ``save()`` para salvar modelos h5 em vez do método ``save_weights()`` para salvar um modelo usando o tensorflow. No entanto, os modelos h5 também podem ser salvos usando o método ``save_weights()``.
+
+**Syntax:** ``tensorflow.keras.Model.save_weights(location/weights_name)``
+
+A localização junto com o nome dos pesos é passada como parâmetro neste método. Se apenas o nome dos pesos for passado, ele será salvo no mesmo local do arquivo Python.
+
+
+
+
+
+
+
+
+
+
+
+
+Thanks God!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
