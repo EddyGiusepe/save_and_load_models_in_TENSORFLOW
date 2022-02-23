@@ -64,6 +64,20 @@ Praticamente, você pode imaginar um cenário em que você codificou um aplicati
 
 É por isso que salvar o modelo é uma etapa muito importante e pode economizar muito tempo e recursos com apenas algumas linhas extras de código.
 
+Links de estudo:
+
+* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html](Saving, loading models in TensorFlow)
+
+* [https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/](Save and load models in TensorFlow)
+
+* [https://www.tensorflow.org/guide/saved_model](Usando o formato SavedModel)
+
+* [https://www.tensorflow.org/guide/keras/save_and_serialize](Save and serialize)
+
+* [https://www.youtube.com/watch?v=NVY0FucNRU4](TensorFlow Tutorial 06 - Save & Load Models)
+
+
+
 
 
 
