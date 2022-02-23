@@ -48,6 +48,29 @@ Agora você pode simplesmente salvar os pesos de todas as camadas usando o méto
 A localização junto com o nome dos pesos é passada como parâmetro neste método. Se apenas o nome dos pesos for passado, ele será salvo no mesmo local do arquivo Python.
 
 
+## Importância de salvar modelos de aprendizado profundo
+
+Vamos aprofundizar mais um pouco!!!
+
+Lembre-se, na descida do gradiente, atualizamos os pesos e o viés com base na função de erro ou perda.
+
+![image](https://user-images.githubusercontent.com/69597971/155252626-5d3b4209-cb13-458d-a674-0c5e9d544d0a.png)
+
+Lembre-se, na descida do gradiente, atualizamos os pesos e o viés com base na função de erro ou perda.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
