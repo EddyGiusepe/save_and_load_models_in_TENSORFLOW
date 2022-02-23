@@ -56,52 +56,15 @@ Lembre-se, na descida do gradiente, atualizamos os pesos e o viés com base na f
 
 ![image](https://user-images.githubusercontent.com/69597971/155252626-5d3b4209-cb13-458d-a674-0c5e9d544d0a.png)
 
-Lembre-se, na descida do gradiente, atualizamos os pesos e o viés com base na função de erro ou perda.
+Agora imagine que você treinou um modelo por milhares de épocas, por dias, semanas ou até horas, e obteve pesos muito bons para seu modelo, o que significa que seu modelo está tendo um desempenho muito bom, e então você perde todos os pesos quando fecha seu programa/caderno jupyter.
 
+Isso se tornará um problema mais agitado quando você quiser reutilizar esse modelo em outro aplicativo e não tiver progresso salvo. Você precisa iniciar o processo de treinamento do zero, o que pode desperdiçar suas horas ou dias.
 
+Praticamente, você pode imaginar um cenário em que você codificou um aplicativo de modelo de reconhecimento facial realmente bom com precisão acima de 99%, precisão etc., e levou cerca de 30 horas para treinar esse modelo em um grande conjunto de dados. Agora, se você não salvou o modelo e deseja usá-lo em qualquer aplicativo, terá que treinar novamente todo o modelo por 30 horas.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+É por isso que salvar o modelo é uma etapa muito importante e pode economizar muito tempo e recursos com apenas algumas linhas extras de código.
 
 
 
 
 Thanks God!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
