@@ -64,20 +64,9 @@ Praticamente, você pode imaginar um cenário em que você codificou um aplicati
 
 É por isso que salvar o modelo é uma etapa muito importante e pode economizar muito tempo e recursos com apenas algumas linhas extras de código.
 
-Links de estudo:
 
-* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html](Saving, loading models in TensorFlow)
+## OBSERVAÇÃO IMPORTANTE!
 
-* [https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/](Save and load models in TensorFlow)
-
-* [https://www.tensorflow.org/guide/saved_model](Usando o formato SavedModel)
-
-* [https://www.tensorflow.org/guide/keras/save_and_serialize](Save and serialize)
-
-* [https://www.youtube.com/watch?v=NVY0FucNRU4](TensorFlow Tutorial 06 - Save & Load Models)
-
-
-OBSERVAÇÃO IMPORTANTE!
 ``Ao carregar os pesos de um modelo, você precisa ter a arquitetura correta desse modelo.``
 
 **Por exemplo:**
@@ -111,12 +100,28 @@ Você viu que usar o ``formato .h5`` é simples e limpo, pois cria apenas um ún
 
 * Usado para salvar dados gigantes, que podem não ser tabulares.
 * Formato de salvamento de arquivo comum.
-* Tudo salvo em um arquivo (pesos, perdas, otimizadores usados ​​com keras)
-Desvantagens
+* Tudo salvo em um arquivo (pesos, perdas, otimizadores usados com keras)
 
-Não pode ser usado com o Tensorflow Serving, mas você pode simplesmente convertê-lo para .pb via experimental.export_saved_model(model, 'path_to_saved_model')
+## Desvantagens
+
+* Não pode ser usado com o Tensorflow Serving, mas você pode simplesmente convertê-lo para ``.pb`` via ``experimental.export_saved_model(model, 'path_to_saved_model')``
+
+**O que usar**
+
+Se você não for usar o serviço TensorFlow ou implantar seu modelo, então, para simplificar, você pode usar o formato ``.hdf5``, mas se você for usar o serviço TensorFlow, você deve usar o formato nativo do tensorflow.
 
 
 
+Links de estudo:
+
+* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html](Saving, loading models in TensorFlow)
+
+* [https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/](Save and load models in TensorFlow)
+
+* [https://www.tensorflow.org/guide/saved_model](Usando o formato SavedModel)
+
+* [https://www.tensorflow.org/guide/keras/save_and_serialize](Save and serialize)
+
+* [https://www.youtube.com/watch?v=NVY0FucNRU4](TensorFlow Tutorial 06 - Save & Load Models)
 
 Thanks God!
