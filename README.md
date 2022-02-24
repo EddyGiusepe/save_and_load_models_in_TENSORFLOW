@@ -77,6 +77,44 @@ Links de estudo:
 * [https://www.youtube.com/watch?v=NVY0FucNRU4](TensorFlow Tutorial 06 - Save & Load Models)
 
 
+OBSERVAÇÃO IMPORTANTE!
+``Ao carregar os pesos de um modelo, você precisa ter a arquitetura correta desse modelo.``
+
+**Por exemplo:**
+
+Você não pode carregar os pesos do nosso _modelo_ que acabamos de criar para um ``modelo sequencial`` com 1 ``camada Densa``, pois ambos não são compatíveis. Então você pode estar pensando, qual é a utilidade de salvar apenas os pesos?
+
+Bem, a resposta é que, se você estiver olhando para algum grande _aplicativo_ ***SOTA**, como **YOLO**, ou algo assim, onde eles fornecem o código-fonte. Mas, treiná-los em suas máquinas é uma tarefa longa e demorada, então eles também fornecem os pesos pré-treinados em diferentes épocas, como se você quiser ver como esse modelo está desempenhandose em $50$ épocas, então você pode carregar o pesos salvados de $50$ épocas, e da mesma forma para outros números de épocas. Dessa forma, você pode verificar o desempenho do modelo no número de épocas de treinamento com base no desempenho do modelo em um número X de épocas sem treiná-lo explicitamente.
+
+## Formato nativo do TensorFlow vs hdf5, qual devo usar e quando?
+ 
+Você viu que usar o ``formato .h5`` é simples e limpo, pois cria apenas um único arquivo, enquanto o uso do ``formato nativo tensorflow`` cria várias pastas e arquivos, o que é difícil de ler. Então, você pode estar pensando por que devemos usar o formato nativo do tensorflow? A resposta para isso é que no formato nativo do TensorFlow, tudo é estrutural e organizado em seu lugar. ``Por exemplo``: o ``arquivo .pb`` contém dados estruturais que podem ser carregados por vários linguages. Algumas das vantagens do formato nativo do ``TF`` estão listadas a seguir.
+
+
+## Vantagens do formato nativo do TensorFlow
+
+* Usa o servidor do [TensorFlow](https://www.tensorflow.org/tfx/serving/setup) quando você deseja levar seu modelo para produção.
+
+* Independente de linguagem — o formato binário pode ser lido por vários idiomas (Java, Python, Objective-C e C++, entre outros).
+
+* Aconselhado a usar desde $0$, você pode ver [o guia oficial de serialização do TensorFlow](https://www.tensorflow.org/guide/keras/save_and_serialize), que recomenda o uso do formato TensorFlow Native.
+
+* Salva vários metadados do modelo, como informações do otimizador, perdas, taxa de aprendizado, etc., que podem ajudar posteriormente.
+
+
+## Desvantagens
+
+* O modelo salvo é conceitualmente mais difícil de entender do que um único arquivo. 
+* Cria uma pasta separada para armazenar os pesos.
+
+## Vantagens de h5
+
+* Usado para salvar dados gigantes, que podem não ser tabulares.
+* Formato de salvamento de arquivo comum.
+* Tudo salvo em um arquivo (pesos, perdas, otimizadores usados ​​com keras)
+Desvantagens
+
+Não pode ser usado com o Tensorflow Serving, mas você pode simplesmente convertê-lo para .pb via experimental.export_saved_model(model, 'path_to_saved_model')
 
 
 
