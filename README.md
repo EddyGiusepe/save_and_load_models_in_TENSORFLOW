@@ -116,14 +116,13 @@ Links de estudo:
 
 * [Saving, loading models in TensorFlow](https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html)
 
-* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html]()
 
-* [https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/](Save and load models in TensorFlow)
+* [Save and load models in TensorFlow](https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/)
 
-* [https://www.tensorflow.org/guide/saved_model](Usando o formato SavedModel)
+* [Usando o formato SavedModel](https://www.tensorflow.org/guide/saved_model)
 
-* [https://www.tensorflow.org/guide/keras/save_and_serialize](Save and serialize)
+* [Save and serialize](https://www.tensorflow.org/guide/keras/save_and_serialize)
 
-* [https://www.youtube.com/watch?v=NVY0FucNRU4](TensorFlow Tutorial 06 - Save & Load Models)
+* [TensorFlow Tutorial 06 - Save & Load Models](https://www.youtube.com/watch?v=NVY0FucNRU4)
 
 Thanks God!
