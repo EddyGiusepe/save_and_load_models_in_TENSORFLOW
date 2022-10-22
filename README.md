@@ -114,7 +114,9 @@ Se você não for usar o serviço TensorFlow ou implantar seu modelo, então, pa
 
 Links de estudo:
 
-* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html](Saving, loading models in TensorFlow)
+* [Saving, loading models in TensorFlow](https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html)
+
+* [https://www.kdnuggets.com/2021/02/saving-loading-models-tensorflow.html]()
 
 * [https://www.geeksforgeeks.org/save-and-load-models-in-tensorflow/](Save and load models in TensorFlow)
 
